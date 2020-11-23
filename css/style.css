@@ -1,7 +1,6 @@
 /* COMMON & SETTINGS */
 [class*="col-"] {
   background: #fff;
-  height: 300px;
   text-align: center;
   line-height: 300px;
 }
@@ -26,6 +25,17 @@
   color: #fff;
 }
 
+.star {
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.no-lh {
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .star span::before {
   content: "";
   height: 3px;
@@ -42,6 +52,14 @@
   transform: translateX(40px);
   transform: translateY(8px);
 }
+
+.margin-top {
+  margin-top: 100px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #ccc;
+}
 /* /COMMON & SETTINGS */
 
 /* HEADER */
@@ -51,7 +69,7 @@ nav {
 }
 
 .jumbotron img {
-  height: 300px;
+  height: 200px;
 }
 
 .nav-bg-color {
@@ -63,6 +81,15 @@ nav {
 
 /* MAIN */
 .portfolio img {
-  height: 300px;
+  height: 250px;
   border-radius: 15px;
+}
+
+.about p {
+  font-weight: bold;
+}
+
+.button-about {
+  border: 1px solid #fff;
+  margin-bottom: 100px
 }
