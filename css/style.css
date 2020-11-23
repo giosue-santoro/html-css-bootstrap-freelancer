@@ -1,6 +1,6 @@
 /* COMMON & SETTINGS */
 [class*="col-"] {
-  background: pink;
+  background: #fff;
   height: 300px;
   text-align: center;
   line-height: 300px;
@@ -29,17 +29,17 @@
 .star span::before {
   content: "";
   height: 3px;
-  background: #fff;
+  background: ;
   width:2%;
   position: absolute;
 }
 .star span::after {
   content: "";
   height: 3px;
-  background: #fff;
+  background: ;
   width:2%;
   position: absolute;
-  transform: translateX(45px);
+  transform: translateX(40px);
   transform: translateY(8px);
 }
 /* /COMMON & SETTINGS */
@@ -60,3 +60,9 @@ nav {
 }
 
 /* /HEADER */
+
+/* MAIN */
+.portfolio img {
+  height: 300px;
+  border-radius: 15px;
+}
