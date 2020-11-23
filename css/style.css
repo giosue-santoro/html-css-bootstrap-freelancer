@@ -21,6 +21,14 @@
   margin-bottom: 50px;
 }
 
+.margin-top {
+  margin-top: 100px;
+}
+
+.margin-top-30 {
+  margin-bottom: 30px;
+}
+
 .color-white {
   color: #fff;
 }
@@ -53,12 +61,14 @@
   transform: translateY(8px);
 }
 
-.margin-top {
-  margin-top: 100px;
+.input-border {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #ccc;
 }
 
-.border-bottom {
-  border-bottom: 1px solid #ccc;
+.bg-footer {
+  background-color: #3A546D;
 }
 /* /COMMON & SETTINGS */
 
@@ -93,3 +103,38 @@ nav {
   border: 1px solid #fff;
   margin-bottom: 100px
 }
+
+input {
+  display: block;
+  width: 100%;
+}
+
+/* FOOTER */
+ul {
+  padding: 0;
+}
+
+ul > li {
+  display: inline-block;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.footer-p {
+  font-size: 23px;
+  margin-top: 20px;
+}
+
+.footer-p > span {
+  color: #1abc9c;
+}
+
+.footer-bg-dark {
+  background-color: #2C3E50;
+}
+
+.copyright {
+  padding: 60px;
+  font-size: 18px;
+}
+/* /FOOTER */
