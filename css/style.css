@@ -116,6 +116,7 @@ html, body {
 
 .navbar-brand {
   line-height: 80px;
+  padding-left: 15px;
 }
 
 nav ul>li {
