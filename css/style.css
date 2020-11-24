@@ -4,6 +4,10 @@
   line-height: 300px;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .green-bg {
   background-color: #1abc9c;
 }
@@ -151,7 +155,7 @@ footer ul {
 #footer-list > li {
   display: inline-block;
   font-size: 30px;
-  padding: 20px;
+  padding: 10px;
 }
 
 li > i {
