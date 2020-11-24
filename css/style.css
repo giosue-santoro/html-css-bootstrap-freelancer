@@ -34,8 +34,8 @@
 }
 
 .star {
-  padding: 20px 0;
   font-size: 30px;
+  padding: 20px;
 }
 
 .no-lh {
@@ -44,21 +44,24 @@
   font-size: 20px;
 }
 
-.star span::before {
+.star::before,
+.star::after {
   content: "";
-  height: 3px;
-  background: ;
-  width:2%;
-  position: absolute;
+  display: inline-block;
+  width: 120px;
+  height: 4px;
+  border-radius: 2px;
+  vertical-align: middle;
 }
-.star span::after {
-  content: "";
-  height: 3px;
-  background: ;
-  width:2%;
-  position: absolute;
-  transform: translateX(40px);
-  transform: translateY(8px);
+
+.star-white::before,
+.star-white::after {
+  background: #fff;
+}
+
+.star-dark::before,
+.star-dark::after {
+  background: #2C3E50;
 }
 
 .input-border {
@@ -70,12 +73,25 @@
 .bg-footer {
   background-color: #3A546D;
 }
+
+.margin-0 {
+  margin: 0;
+  border: none;
+}
+
+.padding-0 {
+  padding: 0;
+}
 /* /COMMON & SETTINGS */
 
 /* HEADER */
-nav {
-  height: 80px;
+.bl-navbar {
   background-color: #2c3e50;
+  color: #fff;
+}
+
+.bl-navbar .navbar-brand, .bl-navbar .navbar-nav>li>a {
+  color: #fff;
 }
 
 .jumbotron img {
@@ -87,6 +103,17 @@ nav {
   padding: 0;
 }
 
+.navbar-brand {
+  line-height: 80px;
+}
+
+nav ul>li {
+  display: inline-block;
+  line-height: 80px;
+  float: right;
+  padding-right: 30px;
+  font-size: 25px;
+}
 /* /HEADER */
 
 /* MAIN */
@@ -110,14 +137,23 @@ input {
 }
 
 /* FOOTER */
-ul {
+footer ul {
   padding: 0;
 }
 
-ul > li {
+#footer-list > li {
   display: inline-block;
   font-size: 30px;
   padding: 20px;
+}
+
+li > i {
+  background-color: #3a546d;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  padding: 10px;
+  height: 55px;
+  width: 55px;
 }
 
 .footer-p {

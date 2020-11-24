@@ -11,13 +11,31 @@
   </head>
   <body>
     <div class="row">
-      <div class="container-fluid no-gutters">
+      <div class="container-fluid">
         <!-- HEADER -->
         <div class="row">
           <header>
             <!-- NAV BAR -->
-                <nav>
-                </nav>
+            <nav class="navbar navbar-default bl-navbar margin-0">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand margin-0 padding-0 text-uppercase" href="#">Start Bootstrap</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                  <ul>
+                    <li><a href="#" class="color-white">Portfolio</a></li>
+                    <li><a href="#"></a>Contact</li>
+                    <li><a href="#"></a>About</li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
             <!-- /NAV BAR -->
 
             <!-- JUMBOTRON -->
@@ -26,8 +44,8 @@
               <div class="text-center color-white">
                 <img src="img/jumbotron.svg" alt="jumbotron">
                 <h1>START BOOTSTRAP</h1>
-                <div class="star">
-                  <div><i class="fa fa-star" aria-hidden="true"></i></div>
+                <div class="star star-white">
+                  <i class="fa fa-star" aria-hidden="true"></i>
                 </div>
                 <div class="box-jumbotron">
                   <h5>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h5>
@@ -40,14 +58,15 @@
         <!-- /HEADER -->
 
         <!-- MAIN -->
-        <div class="container-fluid no-gutters">
+        <div class="row">
           <main>
-              <!-- PORTFOLIO -->
+            <!-- PORTFOLIO -->
+            <div class="container">
               <div class="row">
                 <section class="portfolio">
                   <h3 class="text-center">PORTFOLIO</h3>
-                  <div class="star text-center">
-                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <div class="star star-dark text-center">
+                    <i class="fa fa-star" aria-hidden="true"></i>
                   </div>
                   <div class="container">
                     <div class="row">
@@ -73,15 +92,17 @@
                   </div>
                 </section>
               </div>
-              <!-- /PORTFOLIO -->
+            </div>
+            <!-- /PORTFOLIO -->
 
-              <!-- ABOUT -->
-              <div class="row">
-                <div class="container-fluid green-bg color-white no-gutters">
+            <!-- ABOUT -->
+            <div class="row green-bg color-white">
+              <div class="container">
+                <div class="row">
                   <section class="about">
                     <h3 class="text-center">ABOUT</h3>
-                    <div class="star text-center">
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                    <div class="star star-white text-center">
+                      <i class="fa fa-star" aria-hidden="true"></i>
                     </div>
                     <div class="container">
                       <div class="row">
@@ -103,15 +124,16 @@
                   </section>
                 </div>
               </div>
-              <!-- /ABOUT -->
+            </div>
+            <!-- /ABOUT -->
 
-              <!-- CONTACT ME -->
-                <div class="container margin-bottom">
+            <!-- CONTACT ME -->
+              <div class="row margin-bottom">
+                <div class="container">
                   <div class="row">
-                    <div class="container">
-                      <h3 class="text-center">CONTACT ME</h3>
-                      <div class="star text-center">
-                        <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                      <h3 class="text-center ">CONTACT ME</h3>
+                      <div class="star star-dark text-center">
+                        <i class="fa fa-star" aria-hidden="true"></i>
                       </div>
                       <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
@@ -130,16 +152,17 @@
                         <input type="phone-number" class="input-border margin-top" id="exampleInputPassword1">
                       </div>
                       <button type="button" class="btn btn-success color-white green-bg">Send</button>
-                    </div>
                   </div>
                 </div>
+              </div>
               <!-- /CONTACT ME -->
           </main>
         </div>
         <!-- /MAIN -->
 
         <!-- FOOTER -->
-          <div class="container-fluid bg-footer">
+        <footer>
+          <div class="row bg-footer">
             <div class="container">
               <div class="col-xs-12 bg-footer color-white margin-bottom">
                 <h3 class="padding">LOCATION </h3>
@@ -148,7 +171,7 @@
 
               <div class="color-white text-center">
                 <h3>AROUND THE WEB</h3>
-                <ul>
+                <ul id="footer-list">
                   <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
                   <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
                   <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
@@ -164,9 +187,9 @@
           </div>
 
           <!-- Second Footer -->
-          <div class="container-fluid footer-bg-dark">
-            <div class="row">
-              <div class="container">
+          <div class="row footer-bg-dark">
+            <div class="container">
+              <div class="row">
                 <div class="color-white text-center copyright">
                   Copyright &copy; Your Website 2019
                 </div>
@@ -174,6 +197,7 @@
             </div>
           </div>
           <!-- /Second Footer -->
+        </footer>
         <!-- /FOOTER -->
       </div>
     </div>
